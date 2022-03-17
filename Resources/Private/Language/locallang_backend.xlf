@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file source-language="en" datatype="plaintext" original="messages" date="2012-11-01T14:46:01Z"  product-name="slub_profile_booked">
+		<header/>
+		<body>
+			<trans-unit id="plugin.title" resname="plugin.title">
+				<source>Booked rooms</source>
+			</trans-unit>
+
+			<trans-unit id="plugin.bookedlist.title" resname="plugin.bookedlist.title">
+				<source>Booked rooms list</source>
+			</trans-unit>
+			<trans-unit id="plugin.bookedlist.description" resname="plugin.bookedlist.description">
+				<source>List of booked rooms.</source>
+			</trans-unit>
+
+			<trans-unit id="extensionConfiguration.bookedList.requestUri" resname="extensionConfiguration.bookedList.requestUri">
+				<source>URI: The uri has to begin with "https://". Another DDEV container can be addressed directly via the container with "https: // ddev - ### YOUR-CONTAINER ### - web" or the domain, if configured "external_links".</source>
+			</trans-unit>
+			<trans-unit id="extensionConfiguration.bookedList.requestArgumentIdentifier" resname="extensionConfiguration.bookedList.requestArgumentIdentifier">
+				<source>Argument identifier: The parameter needs to be written in a specific identifier. Default value "". Change only if you know what you do.</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

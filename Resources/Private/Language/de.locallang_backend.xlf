@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file source-language="en" target-language="de" datatype="plaintext" original="messages" date="2012-11-01T14:46:01Z"  product-name="slub_profile_bookeds">
+		<header/>
+		<body>
+			<trans-unit id="plugin.title" resname="plugin.title">
+				<source>Booked rooms</source>
+				<target>Raumbuchungen</target>
+			</trans-unit>
+
+			<trans-unit id="plugin.bookedlist.title" resname="plugin.bookedlist.title">
+				<source>Booked rooms list</source>
+				<target>Raumbuchungsliste</target>
+			</trans-unit>
+			<trans-unit id="plugin.bookedlist.description" resname="plugin.bookedlist.description">
+				<source>List of booked rooms.</source>
+				<target>Auflistung von gebuchten Räumen.</target>
+			</trans-unit>
+
+			<trans-unit id="extensionConfiguration.bookedList.requestUri" resname="extensionConfiguration.bookedList.requestUri">
+				<source>URI: The uri has to begin with "https://". Another DDEV container can be addressed directly via the container with "https: // ddev - ### YOUR-CONTAINER ### - web" or the domain, if configured "external_links".</source>
+				<target>URI: Die URI muss mit "https://" anfangen. Ein anderer DDEV-Container kann direkt über den Container mit "https://ddev-###YOUR-CONTAINER###-web" angesprochen werden oder die Domain, wenn "external_links" konfiguriert.</target>
+			</trans-unit>
+			<trans-unit id="extensionConfiguration.bookedList.requestArgumentIdentifier" resname="extensionConfiguration.bookedList.requestArgumentIdentifier">
+				<source>Argument identifier: The parameter needs to be written in a specific identifier. Default value "". Change only if you know what you do.</source>
+				<target>Parameter ID: Die Parameter benötigen einen spezifischen Container. Default-Wert "". Nur ändern, wenn wirklich notwendig.</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

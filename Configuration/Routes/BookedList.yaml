@@ -1,0 +1,10 @@
+routeEnhancers:
+  SlubBookedBookedList:
+    type: Simple
+    limitToPages: [23]
+    routePath: '/{user}'
+    requirements:
+      user: '[0-9]{1,10}'
+    _arguments:
+      user: 'tx_slubprofilebooked_booked/user'
+
