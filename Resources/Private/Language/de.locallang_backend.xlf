@@ -5,7 +5,7 @@
 		<body>
 			<trans-unit id="plugin.title" resname="plugin.title">
 				<source>Booked rooms</source>
-				<target>Raumbuchungen</target>
+				<target>Raumbuchung</target>
 			</trans-unit>
 
 			<trans-unit id="plugin.bookedlist.title" resname="plugin.bookedlist.title">

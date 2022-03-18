@@ -6,5 +6,5 @@ routeEnhancers:
     requirements:
       user: '[0-9]{1,10}'
     _arguments:
-      user: 'tx_slubprofilebooked_booked/user'
+      user: 'tx_slubprofilebooked_bookedlist/user'
 

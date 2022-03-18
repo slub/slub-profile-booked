@@ -37,7 +37,8 @@ class BookedController extends ActionController
      */
     public function listAction(): ResponseInterface
     {
-        $booked = $this->bookedService->getBooked($this->request->getArguments());
+        //$booked = $this->bookedService->getBooked($this->request->getArguments());
+        $booked['booked'][]['title'] = 'Basic configuration. No api configured yet for user "' . $this->request->getArguments()['user'] . '".';
 
         $this->view->setVariablesToRender(['bookedList']);
         $this->view->assign('bookedList', $booked);
