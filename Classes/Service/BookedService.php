@@ -11,42 +11,50 @@ declare(strict_types=1);
 
 namespace Slub\SlubProfileBooked\Service;
 
-use Slub\SlubProfileBooked\Http\Request;
-use Slub\SlubProfileBooked\Routing\UriGenerator;
+use JsonException;
 use Slub\SlubProfileBooked\Sanitization\BookedArgumentSanitization;
-use TYPO3\CMS\Core\Context\Exception\AspectNotFoundException;
 
 class BookedService
 {
+    protected AuthenticationService $authenticationService;
     protected BookedArgumentSanitization $bookedArgumentSanitization;
-    protected Request $request;
-    protected UriGenerator $uriGenerator;
+    protected ReservationService $reservationService;
+    protected UserService $userService;
 
     /**
+     * @param AuthenticationService $authenticationService
      * @param BookedArgumentSanitization $bookedArgumentSanitization
-     * @param Request $request
-     * @param UriGenerator $uriGenerator
+     * @param ReservationService $reservationService
+     * @param UserService $userService
      */
     public function __construct(
+        AuthenticationService $authenticationService,
         BookedArgumentSanitization $bookedArgumentSanitization,
-        Request $request,
-        UriGenerator $uriGenerator
+        ReservationService $reservationService,
+        UserService $userService
     ) {
+        $this->authenticationService = $authenticationService;
         $this->bookedArgumentSanitization = $bookedArgumentSanitization;
-        $this->request = $request;
-        $this->uriGenerator = $uriGenerator;
+        $this->reservationService = $reservationService;
+        $this->userService = $userService;
     }
 
     /**
      * @param array $arguments
      * @return array
-     * @throws AspectNotFoundException
+     * @throws JsonException
      */
     public function getBooked(array $arguments): array
     {
         $sanitizedArguments = $this->bookedArgumentSanitization->sanitizeArguments($arguments);
-        $uri = $this->uriGenerator->buildBookedList($sanitizedArguments);
+        $requestOptions = $this->authenticationService->getHeaders();
 
-        return $this->request->process($uri) ?? [];
+        // There is no direct way to get the user nor his reservations.
+        // Collect all reservations and users and pick those who are relevant.
+        $reservations = $this->reservationService->getData($requestOptions);
+        $users = $this->userService->getData($requestOptions);
+        $currentUser = $this->userService->findByUserName($users, (string)$sanitizedArguments['user']);
+
+        return $this->reservationService->findByUserId($reservations, (string)$currentUser['id']);
     }
 }

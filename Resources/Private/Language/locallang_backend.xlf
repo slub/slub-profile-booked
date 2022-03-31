@@ -14,11 +14,14 @@
 				<source>List of booked rooms.</source>
 			</trans-unit>
 
-			<trans-unit id="extensionConfiguration.bookedList.requestUri" resname="extensionConfiguration.bookedList.requestUri">
+			<trans-unit id="extensionConfiguration.requestUri" resname="extensionConfiguration.requestUri">
 				<source>URI: The uri has to begin with "https://". Another DDEV container can be addressed directly via the container with "https: // ddev - ### YOUR-CONTAINER ### - web" or the domain, if configured "external_links".</source>
 			</trans-unit>
-			<trans-unit id="extensionConfiguration.bookedList.requestArgumentIdentifier" resname="extensionConfiguration.bookedList.requestArgumentIdentifier">
-				<source>Argument identifier: The parameter needs to be written in a specific identifier. Default value "". Change only if you know what you do.</source>
+			<trans-unit id="extensionConfiguration.authenticationUsername" resname="extensionConfiguration.authenticationUsername">
+				<source>Authentication username</source>
+			</trans-unit>
+			<trans-unit id="extensionConfiguration.authenticationPassword" resname="extensionConfiguration.authenticationPassword">
+				<source>Authentication password</source>
 			</trans-unit>
 		</body>
 	</file>

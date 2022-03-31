@@ -13,5 +13,14 @@ services:
   Slub\SlubProfileBooked\Routing\UriGenerator:
     public: true
 
+  Slub\SlubProfileBooked\Service\AuthenticationService:
+    public: true
+
   Slub\SlubProfileBooked\Service\BookedService:
+    public: true
+
+  Slub\SlubProfileBooked\Service\ReservationService:
+    public: true
+
+  Slub\SlubProfileBooked\Service\UserService:
     public: true

@@ -17,13 +17,17 @@
 				<target>Auflistung von gebuchten Räumen.</target>
 			</trans-unit>
 
-			<trans-unit id="extensionConfiguration.bookedList.requestUri" resname="extensionConfiguration.bookedList.requestUri">
+			<trans-unit id="extensionConfiguration.requestUri" resname="extensionConfiguration.requestUri">
 				<source>URI: The uri has to begin with "https://". Another DDEV container can be addressed directly via the container with "https: // ddev - ### YOUR-CONTAINER ### - web" or the domain, if configured "external_links".</source>
 				<target>URI: Die URI muss mit "https://" anfangen. Ein anderer DDEV-Container kann direkt über den Container mit "https://ddev-###YOUR-CONTAINER###-web" angesprochen werden oder die Domain, wenn "external_links" konfiguriert.</target>
 			</trans-unit>
-			<trans-unit id="extensionConfiguration.bookedList.requestArgumentIdentifier" resname="extensionConfiguration.bookedList.requestArgumentIdentifier">
-				<source>Argument identifier: The parameter needs to be written in a specific identifier. Default value "". Change only if you know what you do.</source>
-				<target>Parameter ID: Die Parameter benötigen einen spezifischen Container. Default-Wert "". Nur ändern, wenn wirklich notwendig.</target>
+			<trans-unit id="extensionConfiguration.authenticationUsername" resname="extensionConfiguration.authenticationUsername">
+				<source>Authentication username</source>
+				<target>Authentifizierung Benutzer</target>
+			</trans-unit>
+			<trans-unit id="extensionConfiguration.authenticationPassword" resname="extensionConfiguration.authenticationPassword">
+				<source>Authentication password</source>
+				<target>Authentifizierung Passwort</target>
 			</trans-unit>
 		</body>
 	</file>

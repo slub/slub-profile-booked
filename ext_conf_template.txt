@@ -1,5 +1,8 @@
-# cat=API booked list; type=string; label=LLL:EXT:slub_profile_booked/Resources/Private/Language/locallang_backend.xlf:extensionConfiguration.bookedList.requestUri
-bookedList.requestUri =
+# cat=API booked; type=string; label=LLL:EXT:slub_profile_booked/Resources/Private/Language/locallang_backend.xlf:extensionConfiguration.requestUri
+requestUri =
 
-# cat=API booked list; type=string; label=LLL:EXT:slub_profile_booked/Resources/Private/Language/locallang_backend.xlf:extensionConfiguration.bookedList.requestArgumentIdentifier
-bookedList.requestArgumentIdentifier = tx_slubfindbooked_bookedlist
+# cat=API booked; type=string; label=LLL:EXT:slub_profile_booked/Resources/Private/Language/locallang_backend.xlf:extensionConfiguration.authenticationUsername
+authenticationUsername =
+
+# cat=API booked; type=string; label=LLL:EXT:slub_profile_booked/Resources/Private/Language/locallang_backend.xlf:extensionConfiguration.authenticationPassword
+authenticationPassword =

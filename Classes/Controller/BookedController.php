@@ -11,6 +11,7 @@ declare(strict_types=1);
 
 namespace Slub\SlubProfileBooked\Controller;
 
+use JsonException;
 use Psr\Http\Message\ResponseInterface;
 use Slub\SlubProfileBooked\Mvc\View\JsonView;
 use Slub\SlubProfileBooked\Service\BookedService;
@@ -34,11 +35,11 @@ class BookedController extends ActionController
     /**
      * @return ResponseInterface
      * @throws AspectNotFoundException
+     * @throws JsonException
      */
     public function listAction(): ResponseInterface
     {
-        //$booked = $this->bookedService->getBooked($this->request->getArguments());
-        $booked['booked'][]['title'] = 'Basic configuration. No api configured yet for user "' . $this->request->getArguments()['user'] . '".';
+        $booked['booked'] = $this->bookedService->getBooked($this->request->getArguments());
 
         $this->view->setVariablesToRender(['bookedList']);
         $this->view->assign('bookedList', $booked);

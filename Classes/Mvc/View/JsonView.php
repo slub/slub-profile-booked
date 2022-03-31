@@ -40,7 +40,13 @@ class JsonView extends ExtbaseJsonView
             'booked' => [
                 '_descendAll' => [
                     '_only' => [
-                        'title'
+                        'referenceNumber',
+                        'startDate',
+                        'endDate',
+                        'resourceName',
+                        'title',
+                        'description',
+                        'duration'
                     ],
                 ]
             ]
