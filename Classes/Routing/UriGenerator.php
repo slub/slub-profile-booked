@@ -30,6 +30,7 @@ class UriGenerator
      */
     public function buildAuthenticationUri(): string
     {
+        /** @extensionScannerIgnoreLine */
         return $this->apiConfiguration->getRequestUri() . 'Authentication/Authenticate';
     }
 
@@ -38,6 +39,7 @@ class UriGenerator
      */
     public function buildUsersUri(): string
     {
+        /** @extensionScannerIgnoreLine */
         return $this->apiConfiguration->getRequestUri() . 'Users/';
     }
 
@@ -46,6 +48,7 @@ class UriGenerator
      */
     public function buildReservationsUri(): string
     {
+        /** @extensionScannerIgnoreLine */
         return $this->apiConfiguration->getRequestUri() . 'Reservations/';
     }
 }

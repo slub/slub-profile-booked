@@ -64,6 +64,7 @@ class AuthenticationService
     protected function getAuthentication(): array
     {
         $uri = $this->uriGenerator->buildAuthenticationUri();
+        /** @extensionScannerIgnoreLine */
         $options = $this->getOptions();
 
         return $this->request->process($uri, 'POST', $options) ?? [];
