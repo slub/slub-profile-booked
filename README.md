@@ -37,8 +37,8 @@ Please check the routes' configuration. You have to set the matching page (limit
 
 A list of booked rooms from a given user.
 
-- **Uri DDEV local:** https://ddev-slub-profile-service.ddev.site/merkliste/###USER_ID###
-- **Uri general:** https://###YOUR-DOMAIN###/merkliste/###USER_ID###
+- **Uri DDEV local:** https://ddev-slub-profile-service.ddev.site/raumbuchungen/###USER_ID###
+- **Uri general:** https://###YOUR-DOMAIN###/raumbuchungen/###USER_ID###
 
 #### 3.2.1 Extension configuration
 
