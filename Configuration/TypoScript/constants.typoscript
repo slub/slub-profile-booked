@@ -1,0 +1,4 @@
+plugin.tx_slubprofilebooked {
+  # cat=plugin.tx_slubprofilebooked//a; type=string; label=Default storage PID
+  settings.storagePid = 0
+}
